@@ -1,0 +1,88 @@
+aid: ubs-bank-usa
+name: UBS Bank USA
+review:
+  question: Does UBS Bank USA expose a documented first-party public developer API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    UBS Bank USA (BUSA) is a Utah state-chartered industrial bank and
+    FDIC-insured depository institution in Salt Lake City, Utah, established
+    2003 (~$122B total assets), and is the US banking entity of UBS Wealth
+    Management Americas. It serves high-net-worth and ultra-high-net-worth
+    advisory clients with FDIC-insured deposit sweeps, securities-based
+    lending, mortgages, and credit cards delivered through UBS Financial
+    Advisors. It is supervised by the FDIC, the Utah Department of Financial
+    Institutions, and the CFPB.
+
+    UBS Bank USA exposes NO first-party public developer API surface of its
+    own. No US developer portal, API reference, or publicly downloadable
+    OpenAPI/Swagger was found. The only live UBS developer portal,
+    https://developer.ubs.com (HTTP 200), is operated by UBS Switzerland and
+    serves Swiss/EU products (UBS key4 mortgages, QR-bill Portal API, PSD2,
+    TWINT, bLink corporate cash management, KeyPort/EBICS, UBS Partner) — it
+    does not serve the US BUSA entity and is recorded here only as the parent
+    group's developer portal, not as a BUSA API surface.
+
+    Open-finance posture: no documented FDX (Financial Data Exchange)
+    participation for UBS Bank USA was found; UBS is not among the listed
+    Akoya owner banks and no FDX-conformant BUSA data-access API is
+    published. No BUSA-specific CFPB Section 1033 / Personal Financial Data
+    Rights posture was located, though BUSA is CFPB-supervised and would fall
+    in scope as the 1033 rule phases in. US consumer-permissioned data
+    access, where available, is aggregator-mediated (Plaid / MX / Finicity /
+    Akoya) rather than exposed via a documented first-party API. No
+    authentication model (OAuth2/OIDC, API key, mTLS) applies because no
+    first-party API is published.
+  posture:
+    firstPartyDeveloperPortal: false
+    firstPartyDeveloperPortalNote: >-
+      developer.ubs.com is live (200) but belongs to UBS Switzerland (Swiss/EU
+      products), not UBS Bank USA. No US-entity developer portal exists.
+    downloadableOpenAPI: false
+    fdxParticipant: false
+    section1033Posture: none-published
+    aggregatorOnly: true
+    authModel: none
+    specProvenance: none
+  transports:
+    - protocol: REST
+      documented: false
+      note: No first-party public REST API is documented for UBS Bank USA.
+  probes:
+    - url: https://developer.ubs.com
+      status: 200
+      note: Live — UBS Switzerland group developer portal (Swiss/EU APIs), not BUSA.
+    - url: https://www.ubs.com
+      status: 200
+      note: Global UBS corporate website.
+    - url: https://api.ubs.com
+      status: 503
+      note: Responds but serves no public/documented API surface.
+    - url: https://developers.ubs.com
+      status: 000
+      note: No DNS/connection.
+    - url: https://developer.ubs.com/support
+      status: 200
+    - url: https://developer.ubs.com/blog
+      status: 200
+    - url: https://www.linkedin.com/company/ubs
+      status: 200
+sources:
+  - url: https://developer.ubs.com
+    type: DeveloperPortal
+    note: UBS Switzerland developer portal; lists Swiss/EU API products only, no US BUSA APIs, no downloadable OpenAPI surfaced.
+  - url: https://www.fdic.gov/system/files/2024-07/ubs-idi-2306.pdf
+    type: Regulatory
+    note: UBS Bank USA 2023 CIDI Resolution Plan Public Section — Utah industrial bank, FDIC-insured, wealth-management clients.
+  - url: https://dfi.utah.gov/financial-institutions/industrial-banks/
+    type: Regulatory
+    note: Utah Department of Financial Institutions industrial bank listing.
+actions:
+  reason: |
+    Honest identity-only (built-stub) record. UBS Bank USA has no first-party
+    public API, no downloadable specs, no documented FDX/1033 posture, and its
+    US data access is aggregator-mediated. No apis[] entries were fabricated;
+    the live developer.ubs.com portal is recorded as the parent group's
+    (UBS Switzerland) portal, clearly distinguished from the US entity.

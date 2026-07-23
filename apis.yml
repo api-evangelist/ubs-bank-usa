@@ -1,0 +1,49 @@
+aid: ubs-bank-usa
+url: https://raw.githubusercontent.com/api-evangelist/ubs-bank-usa/refs/heads/main/apis.yml
+name: UBS Bank USA
+kind: company
+description: >-
+  UBS Bank USA (BUSA) is a Utah state-chartered industrial bank and FDIC-insured
+  depository institution headquartered in Salt Lake City, Utah, established in
+  2003 and reporting roughly $122 billion in total assets. It is the primary US
+  banking vehicle of UBS Wealth Management Americas, providing FDIC-insured
+  deposit sweep programs, securities-based lending, mortgages, and credit cards
+  almost exclusively to the high-net-worth and ultra-high-net-worth advisory
+  clients of parent UBS Group AG. It is supervised by the FDIC, the Utah
+  Department of Financial Institutions, and the CFPB. Unlike a fintech or a
+  Banking-as-a-Service provider, UBS Bank USA exposes no first-party public
+  developer API surface of its own; its services are delivered through UBS
+  Financial Advisors rather than self-serve APIs. The only live UBS developer
+  portal (developer.ubs.com) belongs to UBS Switzerland and serves Swiss and EU
+  products (key4 mortgages, QR-bill, PSD2, TWINT, bLink, KeyPort/EBICS), not this
+  US entity. US consumer-permissioned data access, where available, is mediated
+  by third-party aggregators rather than a documented BUSA API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Wealth Management
+- Industrial Bank
+- Securities-Based Lending
+- Private Banking
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.ubs.com
+- type: DeveloperPortal
+  url: https://developer.ubs.com
+- type: Documentation
+  url: https://developer.ubs.com/get-started
+- type: Support
+  url: https://developer.ubs.com/support
+- type: Blog
+  url: https://developer.ubs.com/blog
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ubs
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
