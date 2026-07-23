@@ -32,6 +32,18 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: VulnerabilityDisclosure
+  url: security/ubs-bank-usa-vulnerability-disclosure.yml
+- type: Security
+  url: well-known/ubs-bank-usa-security.txt
+- type: DomainSecurity
+  url: security/ubs-bank-usa-domain-security.yml
+- type: WellKnown
+  url: well-known/ubs-bank-usa-well-known.yml
+- type: SecurityTxt
+  url: well-known/ubs-bank-usa-security.txt
+- type: LLMsTxt
+  url: llms/ubs-bank-usa-llms.txt
 - type: Website
   url: https://www.ubs.com
 - type: DeveloperPortal

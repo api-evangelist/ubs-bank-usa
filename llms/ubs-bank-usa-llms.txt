@@ -1,0 +1,20 @@
+# UBS Bank USA
+
+> UBS Bank USA (BUSA) is a Utah state-chartered industrial bank and FDIC-insured depository institution headquartered in Salt Lake City, Utah, established in 2003 and reporting roughly $122 billion in total assets. It is the primary US banking vehicle of UBS Wealth Management Americas, providing FDIC-insured deposit sweep programs, securities-based lending, mortgages, and credit cards almost exclusively to the high-net-worth and ultra-high-net-worth advisory clients of parent UBS Group AG. It is supervised by the FDIC, the Utah Department of Financial Institutions, and the CFPB.
+
+## Notes
+
+UBS Bank USA exposes no first-party public developer API surface of its own; its services are delivered through UBS Financial Advisors rather than self-serve APIs. The only live UBS developer portal (developer.ubs.com) belongs to UBS Switzerland and serves Swiss/EU products (key4 mortgages, QR-bill, PSD2, TWINT, bLink, KeyPort/EBICS), not this US entity. US consumer-permissioned data access, where available, is mediated by third-party aggregators rather than a documented BUSA API.
+
+## Company
+
+- [UBS Website](https://www.ubs.com): UBS Group corporate website
+- [UBS on LinkedIn](https://www.linkedin.com/company/ubs): UBS Group company page
+
+## Security
+
+- [security.txt](https://www.ubs.com/.well-known/security.txt): RFC 9116 security contact (esecurity@ubs.com)
+
+## Reference (UBS Switzerland — separate entity)
+
+- [UBS Developer Portal](https://developer.ubs.com): UBS Switzerland developer portal (not the US BUSA entity)

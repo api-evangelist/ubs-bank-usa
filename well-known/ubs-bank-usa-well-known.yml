@@ -1,0 +1,25 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of UBS host /.well-known/ paths
+hosts:
+- host: https://www.ubs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: ubs-bank-usa-security.txt
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://developer.ubs.com
+  note: >-
+    developer.ubs.com is the UBS Switzerland developer portal (Swiss/EU products),
+    not the US UBS Bank USA (BUSA) entity. Probed for completeness; no discovery
+    documents are published for the US entity.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
