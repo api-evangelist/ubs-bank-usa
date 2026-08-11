@@ -32,7 +32,7 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
-- type: SignUp
+- type: Signup
   url: https://developer.ubs.com/signup
 - type: VulnerabilityDisclosure
   url: security/ubs-bank-usa-vulnerability-disclosure.yml
