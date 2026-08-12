@@ -18,6 +18,17 @@ description: >-
   products (key4 mortgages, QR-bill, PSD2, TWINT, bLink, KeyPort/EBICS), not this
   US entity. US consumer-permissioned data access, where available, is mediated
   by third-party aggregators rather than a documented BUSA API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-11'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial Services
