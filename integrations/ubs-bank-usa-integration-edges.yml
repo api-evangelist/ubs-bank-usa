@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/ubs-bank-usa/integrations
+- https://n8n.io/integrations/ubs-bank-usa/
+- https://composio.dev/toolkits/ubs-bank-usa
+- https://monid.ai/tools/ubs-bank-usa
+checked:
+- https://composio.dev/toolkits/ubs-bank-usa
+- https://monid.ai/tools/ubs-bank-usa
+- https://n8n.io/integrations/ubs-bank-usa/
+- https://zapier.com/apps/ubs-bank-usa/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
