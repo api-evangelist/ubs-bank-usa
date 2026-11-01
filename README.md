@@ -1,4 +1,4 @@
-# UBS Bank USA (ubs-bank-usa)
+# UBS Bank USA
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,49 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-UBS Bank USA (BUSA) is a Utah state-chartered industrial bank and FDIC-insured depository institution headquartered in Salt Lake City, Utah, established in 2003 and reporting roughly $122 billion in total assets. It is the primary US banking vehicle of UBS Wealth Management Americas, providing FDIC-insured deposit sweep programs, securities-based lending, mortgages, and credit cards to the high-net-worth and ultra-high-net-worth advisory clients of parent UBS Group AG. It is supervised by the FDIC, the Utah Department of Financial Institutions, and the CFPB.
+UBS Bank USA (BUSA) is a Utah state-chartered industrial bank and FDIC-insured depository institution headquartered in Salt Lake City, Utah, established in 2003 and reporting roughly $122 billion in total assets. It is the primary US banking vehicle of UBS Wealth Management Americas, providing FDIC-insured deposit sweep programs, securities-based lending, mortgages, and credit cards almost exclusively to the high-net-worth and ultra-high-net-worth advisory clients of parent UBS Group AG. It is supervised by the FDIC, the Utah Department of Financial Institutions, and the CFPB. Unlike a fintech or a Banking-as-a-Service provider, UBS Bank USA exposes no first-party public developer API surface of its own; its services are delivered through UBS Financial Advisors rather than self-serve APIs. The only live UBS developer portal (developer.ubs.com) belongs to UBS Switzerland and serves Swiss and EU products (key4 mortgages, QR-bill, PSD2, TWINT, bLink, KeyPort/EBICS), not this US entity. US consumer-permissioned data access, where available, is mediated by third-party aggregators rather than a documented BUSA API.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/ubs-bank-usa/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/ubs-bank-usa/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Wealth Management · Industrial Bank · Securities-Based Lending · Private Banking
 
-## Open-Finance / API Posture
+## UBS Bank USA on APIs.io
 
-UBS Bank USA exposes **no first-party public developer API surface of its own**. As an advisor-led wealth bank rather than a fintech or Banking-as-a-Service provider, its products are delivered through UBS Financial Advisors, not self-serve APIs.
+Everything profiled for UBS Bank USA is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ubs-bank-usa/](https://apis.io/providers/ubs-bank-usa/)** — or go straight to one of the APIs or properties below.
 
-- **First-party developer portal:** None for the US entity. The only live UBS developer portal, [developer.ubs.com](https://developer.ubs.com) (HTTP 200), belongs to **UBS Switzerland** and serves Swiss/EU products — key4 mortgages, QR-bill, PSD2, TWINT, bLink, and KeyPort (EBICS) — not UBS Bank USA.
-- **Downloadable OpenAPI/Swagger:** None found (US or Swiss portal did not surface publicly downloadable specs during this harvest).
-- **FDX (Financial Data Exchange):** No documented UBS Bank USA participation found. UBS is not among the listed Akoya owner banks, and no FDX-conformant BUSA data-access API is published.
-- **CFPB Section 1033:** No published BUSA-specific 1033 / data-rights posture located. BUSA is CFPB-supervised, which would bring it in scope of the Personal Financial Data Rights rule as it phases in.
-- **Aggregator access:** US consumer-permissioned data access, where available, is mediated by third-party aggregators (Plaid / MX / Finicity / Akoya) rather than a documented first-party BUSA API.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Financial Services
-- Banking
-- United States
-- Wealth Management
-- Industrial Bank
-- Securities-Based Lending
-- Private Banking
+#### Security (2)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+- [Ubs Bank Usa Domain Security](https://apis.io/security/ubs-bank-usa/ubs-bank-usa-domain-security/)
+- [Ubs Bank Usa Vulnerability Disclosure](https://apis.io/security/ubs-bank-usa/ubs-bank-usa-vulnerability-disclosure/)
 
-## APIs
+## Where to find this API
 
-No public, documented first-party APIs for UBS Bank USA were found during this bootstrap harvest. This is an honest identity-only record.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.ubs.com)
-- [Developer Portal (UBS Switzerland group portal — not BUSA)](https://developer.ubs.com)
 - [Documentation](https://developer.ubs.com/get-started)
 - [Support](https://developer.ubs.com/support)
 - [Blog](https://developer.ubs.com/blog)
-- [LinkedIn](https://www.linkedin.com/company/ubs)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 13.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 13.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ubs-bank-usa/](https://apis.io/providers/ubs-bank-usa/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for UBS Bank USA: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ubs-bank-usa/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
